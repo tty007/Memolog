@@ -1,0 +1,28 @@
+<!-- the trigger -->
+<div class="curtain-menu-button" data-curtain-menu-button>
+  <div class="curtain-menu-button-toggle">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+  </div>
+</div>
+
+<!-- the menu  -->
+<div class="curtain-menu">
+  <div class="curtain"></div>
+  <div class="curtain"></div>
+  <div class="curtain"></div>
+  <div class="curtain-menu-wrapper">
+    <ul class="curtain-menu-list menu vertical">
+      <li><a href="#">ホーム</a></li>
+      <li><a href="#">このサービスについて</a></li>
+      <li><a href="#">会員登録</a></li>
+      <li><a href="#">ログイン</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  $('[data-curtain-menu-button]').click(function(){
+    $('body').toggleClass('curtain-menu-open');
+  })
+</script>
