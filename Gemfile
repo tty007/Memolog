@@ -24,6 +24,7 @@ gem 'foundation-rails'
 gem 'autoprefixer-rails'
 gem 'foundation-icons-sass-rails' # foundation icon
 gem "jquery-rails"
+gem "font-awesome-rails"
 
 #Authentification
 gem 'devise'
