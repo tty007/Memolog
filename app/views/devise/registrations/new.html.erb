@@ -1,3 +1,44 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+<form>
+  <div class="form-icons">
+    <h4>新規登録</h4>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div class="input-group">
+      <span class="input-group-label">
+        <i class="fa fa-user"></i>
+      </span>
+      <input class="input-group-field" type="text" placeholder="Full name">
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-label">
+        <i class="fa fa-envelope"></i>
+      </span>
+      <input class="input-group-field" type="text" placeholder="Email">
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-label">
+        <i class="fa fa-key"></i>
+      </span>
+      <input class="input-group-field" type="text" placeholder="Password">
+    </div>
+  </div>
+
+  <button class="button expanded">会員になる</button>
+
+  <% end %>
+</form>
+
+
+
+
+
+
+
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>

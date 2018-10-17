@@ -12,6 +12,7 @@ $curtain-menu-button-size: rem-calc(35);
   height: 100vh;
   width: 100vw;
   pointer-events: none;
+  margin-bottom: -100vh;
 }
 
 .curtain-menu-wrapper {
