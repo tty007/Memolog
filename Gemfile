@@ -6,6 +6,7 @@ gem 'rails', '~> 5.2.1'
 
 #DB
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
+gem 'annotate'
 
 #SERVER
 gem 'puma', '~> 3.11'
