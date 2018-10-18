@@ -8,5 +8,7 @@
       <%= f.label :content, "投稿内容" %><br />
       <%= f.text_area :content, size: "60x12", class: 'quill_container', id: 'froala' %>
   </div>
-  <%= f.submit "投稿する", class: "btn btn-success" %>
+  <div class="center">
+    <%= f.submit "投稿する", class: "post-button" %>
+  </div>
 <% end %>

@@ -12,14 +12,10 @@
 //
 //= require jquery
 //= require froala_editor.min.js
-//= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
 //= require foundation
-$(document).on('turbolinks:load', function() {
-    $(function(){ $(document).foundation(); });
-});
 
 $(function(){
     $('#froala').froalaEditor({
@@ -28,4 +24,8 @@ $(function(){
         placeholderText: 'ここに文章を入力してください。文字にあらゆる変化を付け、好きなデザイン・レイアウトでブログを書くことができます。試してみましょう！',
         toolbarButtons: ['fullscreen','paragraphFormat', 'align', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', '|', 'color', 'emoticons', 'inlineStyle', 'paragraphStyle', '|', 'formatOL', 'formatUL', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'quote', 'insertHR', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html']
     });
+});
+
+$(document).on('turbolinks:load', function() {
+    $(function(){ $(document).foundation(); });
 });
