@@ -28,7 +28,7 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 
 #EDIDOR
-# gem 'quilljs-rails'
+gem "wysiwyg-rails"
 
 #Authentification
 gem 'devise'

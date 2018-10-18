@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
     if @post.save
       flash[:success] = "ブログを投稿しました"
-      redirect_to 'index'    
+      redirect_to 'index'
     else
       flash[:error] = "投稿は作成されませんでした"
       render :new
