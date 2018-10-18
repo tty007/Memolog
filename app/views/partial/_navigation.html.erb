@@ -13,10 +13,10 @@
   <div class="curtain"></div>
   <div class="curtain-menu-wrapper">
     <ul class="curtain-menu-list menu vertical">
-      <li><a href="#">ホーム</a></li>
-      <li><a href="#">このサービスについて</a></li>
+      <li><a href="/">ホーム</a></li>
+      <li><a href="/about">このサービスについて</a></li>
       <% if user_signed_in? %>
-        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to "ログアウト", destroy_user_session_path %></li>
       <% else %>
         <li><%= link_to "会員になる", new_user_registration_path %></li>
         <li><%= link_to "ログイン", new_user_session_path %></li>
