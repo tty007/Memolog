@@ -27,16 +27,9 @@ gem 'foundation-icons-sass-rails' # foundation icon
 gem 'jquery-rails'
 gem 'font-awesome-rails'
 
-#EDIDOR
-gem "wysiwyg-rails"
-<<<<<<< HEAD
-
 #EDITOR
 gem "wysiwyg-rails"
 gem "font-awesome-sass"
-
-=======
->>>>>>> fbc3bd7542768c1970c218a69546fe594edca1c1
 
 #Authentification
 gem 'devise'

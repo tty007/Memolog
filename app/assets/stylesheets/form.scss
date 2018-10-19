@@ -56,10 +56,41 @@ form {
   }
 }
 
+.new_post {
+  margin-top: 50px;
+}
+
+label {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.title-form {
+  width: 95%;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  border: solid 2px #000;
+
+}
+
 //-------froala----------
 
 .form-group {
   padding: 20px;
 }
-  
-  
+
+//btn
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
