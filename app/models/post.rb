@@ -8,8 +8,10 @@
 #  user_id    :bigint(8)        not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#
+
 
 class Post < ApplicationRecord
+  validates :title, presence: true
+  validates :content, presence: true, length: { minimum: 10 }
   belongs_to :user
 end

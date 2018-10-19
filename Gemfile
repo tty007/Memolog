@@ -24,8 +24,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'foundation-rails'
 gem 'autoprefixer-rails'
 gem 'foundation-icons-sass-rails' # foundation icon
-gem "jquery-rails"
-gem "font-awesome-rails"
+gem 'jquery-rails'
+gem 'font-awesome-rails'
+
+#EDIDOR
+gem "wysiwyg-rails"
 
 #Authentification
 gem 'devise'
