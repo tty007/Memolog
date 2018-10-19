@@ -30,6 +30,11 @@ gem 'font-awesome-rails'
 #EDIDOR
 gem "wysiwyg-rails"
 
+#EDITOR
+gem "wysiwyg-rails"
+gem "font-awesome-sass"
+
+
 #Authentification
 gem 'devise'
 
