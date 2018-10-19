@@ -10,13 +10,22 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require froala_editor.min.js
 //= require rails-ujs
 //= require activestorage
-
 //= require turbolinks
 //= require_tree .
-//= require jquery
 //= require foundation
 $(document).on('turbolinks:load', function() {
     $(function(){ $(document).foundation(); });
+});
+
+$(function(){
+    $('#froala').froalaEditor({
+        heightMin: 500,
+        heightMax: 1000,
+        placeholderText: 'ここに文章を入力してください。文字にあらゆる変化を付け、好きなデザイン・レイアウトでブログを書くことができます。試してみましょう！',
+        toolbarButtons: ['fullscreen','paragraphFormat', 'align', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', '|', 'color', 'emoticons', 'inlineStyle', 'paragraphStyle', '|', 'formatOL', 'formatUL', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'quote', 'insertHR', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html']
+    });
 });
