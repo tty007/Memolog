@@ -31,6 +31,7 @@ gem "font-awesome-rails"
 gem "wysiwyg-rails"
 gem "font-awesome-sass"
 
+
 #Authentification
 gem 'devise'
 
