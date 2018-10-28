@@ -1,2 +1,11 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<h2 class="center">ブログ投稿一覧</h2>
+<% @posts.each do |post| %>
+  <div class="center">
+    <%= link_to("#{post.title}", post_path(post.id)) %>
+    <div>
+    <%= truncate(strip_tags(post.content), length: 20) do %>
+      <p><%= link_to('続きを読む', post_path(post.id)) %></p>
+    <% end %>
+    </div>
+  </div>
+<% end %>
