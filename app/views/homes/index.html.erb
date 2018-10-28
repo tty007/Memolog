@@ -1,2 +1,36 @@
-<h1>Homes#index</h1>
-<p>Find me in app/views/homes/index.html.erb</p>
+<head>
+  <div class="top-image-wrapper">
+    <%= image_tag("/assets/top-image.png", class: "top-image") %>
+    <h1 class="top-title">Memolog</h1>
+  </div>
+  <div class="center">
+    <p class="sub-title">メモのように、ブログを書こう。</p>
+  </div>
+</head>
+<section class="services">
+  <h2 class="center about">ABOUT SERVICES</h2>
+  <div class="script center">
+    <p>メモのように気軽な気分でブログを書くサービスです。好きな時間に、好きな場所で、好きな話題を。</p>
+    <p>モバイルファーストでありながら、高機能なエディタ機能も実装しています。</p>
+  </div>
+  <div class="center">
+  <%= image_tag("/assets/editor.png", class: "editor-image") %>
+  </div>
+</section>
+
+<section class="dev">
+  <h2 class="center aboutdev">ABOUT DEV.</h2>
+  <div class="center">
+  <%= image_tag("/assets/dev.jpg", class: "dev-image") %>
+  </div>
+  <div class="script center">
+    <p>このサービスは個人開発者である<a href="https://twitter.com/tyengineer">＠TYengineer</a>によって開発・運用されています。</p>
+    <p>個人故に起きるバグや不具合等ございましたら、ご連絡下さい。</p>
+  </div>
+</section>
+
+<footer>
+  <div class="center">
+    <p>Memolog©️</p>
+  </div>
+</footer>

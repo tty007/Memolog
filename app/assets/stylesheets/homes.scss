@@ -1,3 +1,59 @@
-// Place all the styles related to the homes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.top-image-wrapper img.top-image {
+    width: 100%;
+    height: auto;
+}
+
+.top-image-wrapper {
+    position: relative;
+}
+.top-title {
+    border-radius: 6px;
+    margin: 0;
+    padding: 10px;
+    background-color: #00008b;
+    color: #fff;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.sub-title {
+    font-family: "Kokoro";
+}
+
+// ABOUT SERVICES
+.about {
+    margin: 0;
+}
+
+.script {
+    margin: 5px;
+    padding: 15px;
+    font-size: 0.8rem;
+}
+
+.editor-image {
+    width: 50%;
+}
+
+// ABOUT DEV
+
+.dev-image {
+    width: 40%;
+    border-radius: 50%;
+}
+
+@media (min-width: 700px) {
+    .dev-image {
+        width: 20%;
+        border-radius: 50%;
+    }
+    .editor-image {
+        width: 30%;
+    }
+}
+
+footer {
+    background-color: #eee;
+}
