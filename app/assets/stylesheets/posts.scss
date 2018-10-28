@@ -1,0 +1,15 @@
+.title-form {
+    border: none;
+    font-size: 1.5rem;
+}
+.title-form::-webkit-input-placeholder {
+    color: #eee;
+    font-weight: bolid;
+}
+.title-form:focus {
+    outline: 0;
+}
+
+.fr-box.fr-basic.fr-top {
+    border: none;
+}

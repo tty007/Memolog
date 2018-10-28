@@ -1,7 +1,6 @@
 <%= form_for @post do |f| %>
   <div class="form-group center">
-    <%= f.label :title, "タイトル" %><br />
-    <%= f.text_field :title, class: "form-control title-form" %>
+    <%= f.text_field :title, class: "form-control title-form", placeholder: 'ブログタイトル' %>
   </div>
 
   <div class="form-group">
