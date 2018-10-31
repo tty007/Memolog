@@ -14,13 +14,11 @@
 //= require froala_editor.min.js
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
 //= require_tree .
 //= require foundation
 $(document).on('turbolinks:load', function() {
     $(function(){ $(document).foundation(); });
 });
-
 $(function(){
     $('#froala').froalaEditor({
         heightMin: 500,

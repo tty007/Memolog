@@ -28,3 +28,5 @@
 
 #Ignore vendor/bundle file
 /vendor/bundle/*
+
+/todo.txt
