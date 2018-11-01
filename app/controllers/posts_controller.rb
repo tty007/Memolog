@@ -20,7 +20,7 @@ class PostsController < ApplicationController
   end
 
   def edit
-    
+    @post = current_user.posts.find(params[:id])
   end
 
   def show
@@ -28,11 +28,20 @@ class PostsController < ApplicationController
   end
 
   def update
-    
+    @post = current_user.posts.find(params[:id])
+    @post = attribute(post_params)
+    if @post.update(post_params)
+      redirect_to :action => 'index'
+    else
+      render :edit
+    end
   end
 
   def destroy
-    
+    flash[:success] = 'ストーリーを削除しました'
+    @post = current_user.posts.find(params[:id])
+    @post.destroy
+    redirect_to :action => 'index'
   end
 
   private
