@@ -1,11 +1,15 @@
 <h2 class="center">ブログ投稿一覧</h2>
+
 <% @posts.each do |post| %>
-  <div class="center">
-    <%= link_to("#{post.title}", post_path(post.id)) %>
-    <div>
-    <%= truncate(strip_tags(post.content), length: 20) do %>
-      <p><%= link_to('続きを読む', post_path(post.id)) %></p>
-    <% end %>
+  <div class="center card-content">
+    <%= link_to(post_path(post.id), class: "post-link") do %>
+    <%= image_tag("/assets/eyecatch.png", class: "blog-image") %>
+    <h3 class="post-title"><%= "#{post.title}" %></h3>
+    <div class="post-script">
+      <%= truncate(strip_tags(post.content), length: 20) do %>
+        <p><%= link_to('続きを読む', post_path(post.id), class: "next-link") %></p>
+      <% end %>
     </div>
+    <% end %>
   </div>
 <% end %>

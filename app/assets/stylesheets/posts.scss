@@ -13,3 +13,45 @@
 .fr-box.fr-basic.fr-top {
     border: none;
 }
+
+//card-layout
+.card-content {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0;
+    width: 50vw;
+    max-height: 450px;
+    -webkit-box-shadow:0px 20px 50px 1px #9a9a9a ;
+    -moz-box-shadow:0px 20px 50px 1px #9a9a9a ;
+    box-shadow:0px 20px 50px 1px #9a9a9a ;
+    @media (max-width: 800px) {
+        width: 80vw;
+    }
+}
+.blog-image {
+    width: 100%;
+}
+.post-link {
+    text-decoration: none;
+}
+.post-title {
+    margin: 0;
+    color: rgb(105, 105, 105);
+}
+.post-script {
+    padding: 5px;
+    font-size: 10px;
+    color: rgb(126, 126, 126);
+    a {
+        text-decoration: none;
+        color: rgb(126, 126, 126);
+    }
+}
+p .next-link {
+    padding: 5px;
+    background-color: #9a9a9a;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
