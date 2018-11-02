@@ -6,7 +6,7 @@
     <%= image_tag("/assets/eyecatch.png", class: "blog-image") %>
     <h3 class="post-title"><%= "#{post.title}" %></h3>
     <div class="post-script">
-      <%= truncate(strip_tags(post.content), length: 20) do %>
+      <%= truncate(strip_tags(post.content), length: 100) do %>
         <p><%= link_to('続きを読む', post_path(post.id), class: "next-link") %></p>
       <% end %>
     </div>

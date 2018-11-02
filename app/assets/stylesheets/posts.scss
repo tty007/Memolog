@@ -20,7 +20,6 @@
     margin-bottom: 50px;
     padding: 0;
     width: 50vw;
-    max-height: 450px;
     -webkit-box-shadow:0px 20px 50px 1px #9a9a9a ;
     -moz-box-shadow:0px 20px 50px 1px #9a9a9a ;
     box-shadow:0px 20px 50px 1px #9a9a9a ;
@@ -42,9 +41,13 @@
     padding: 5px;
     font-size: 10px;
     color: rgb(126, 126, 126);
+    text-align: left;
     a {
         text-decoration: none;
         color: rgb(126, 126, 126);
+    }
+    p {
+        text-align: center;
     }
 }
 p .next-link {
@@ -53,5 +56,5 @@ p .next-link {
     color: #fff;
     cursor: pointer;
     border-radius: 3px;
-
 }
+

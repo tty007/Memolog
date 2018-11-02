@@ -150,7 +150,37 @@ $curtain-menu-button-size: rem-calc(35);
   }
 }
 
-
+// ----------------navbar2
+.nav-items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  height: 40px;
+}
+.nav-item:first-child {
+  border-right: 1px solid rgb(90, 90, 90);
+  a {
+      font-family: 'Spicy Rice', cursive;
+  }
+}
+.nav-item + .nav-item {
+  border-right: 1px solid rgb(90, 90, 90);
+}
+.nav-item {
+  height: 100%;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  height: 40%;
+  transform: translateY(50%);
+}
 
 
 
